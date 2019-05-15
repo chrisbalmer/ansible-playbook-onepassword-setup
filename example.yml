@@ -1,8 +1,8 @@
 ---
 - name: Test of 1Password Role
-  hosts: all
+  hosts: localhost
   vars:
-    test: "{{ lookup('onepassword', 'ops-gitea-1', section='db', field='username', vault='homelab', domain='my', secret_key=op_key, master_password=op_password) }}"
+    test: "{{ lookup('onepassword', 'ops-gitea-1', section='db', field='username', vault='homelab', domain=op_domain, secret_key=op_key, master_password=op_password) }}"
 
   tasks:
     - debug:

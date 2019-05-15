@@ -1,5 +1,5 @@
 - name: Setup 1Password CLI for AWX
-  hosts: all
+  hosts: localhost
   tasks:
     - name: Install 1Password Binary
       unarchive:

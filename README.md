@@ -4,7 +4,7 @@ This playbook downloads the 1Password CLI binary to AWX (localhost) and then upd
 
 *The best way to do this would be to modify the `Dockerfile` for AWX and do a custom build but I needed a quick way to store some secrets and this was the most familiar for me, eventually I will modify my lab AWX setup to build a custom `Dockerfile` instead.*
 
-This only needs to be run once to setup 1Password for use in other playbooks. There is an includes hosts file that you can use for an inventory source to apply the template to. This includes the neede variables to do the work locally and supply the 1Password CLI version.
+This only needs to be run once to setup 1Password for use in other playbooks. There is an included hosts file that you can use for an inventory source to apply the template to. This includes the needed variables to do the work locally and supply the 1Password CLI version.
 
 You'll want to setup a credential type for 1Password and then add that credential to the templates using the 1Password lookup module.
 

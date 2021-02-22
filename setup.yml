@@ -7,10 +7,3 @@
         dest: /usr/local/bin
         remote_src: yes
         exclude: op.sig
-    - name: Update onepassword.py
-      get_url:
-        url: https://raw.githubusercontent.com/ansible/ansible/v2.8.0rc2/lib/ansible/plugins/lookup/onepassword.py
-        dest: /usr/lib/python2.7/site-packages/ansible/plugins/lookup/onepassword.py
-        force: yes
-
-
